@@ -12,9 +12,9 @@ Framework CSS: Materialize.
 
 Dependências: JQuery e JQuery Mask Plugin.
 
-Link para o site em produção: URL para acessar o site publicado no GitHub Pages.
+Link para o site em produção: https://ja-dantas.github.io/projeto/index.html
 
-Checklist de Funcionalidades: RA1)
+Checklist de Funcionalidades:
 
 ID1: Possui um layout responsivo usando o Materialize.
 
