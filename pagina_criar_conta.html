@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Microsoft Bing</title>
+    <link rel="stylesheet" href="estilo_criarc.css">
+  </head>
+<body>
+
+    <div class="create-account-container">
+        <img src="1280px-Microsoft_Bing_logo.svg.png" alt="Logo Microsoft Bing">
+        <h1>Criar Conta no Bing</h1>
+        <form action="processa_criar_conta.php" method="POST" id="createAccountForm">
+            <label for="username">Endereço de e-mail ou número de telefone</label>
+            <input type="email" id="username" name="username" placeholder="Digite seu e-mail ou telefone" required>
+            <div id="usernameError" class="error"></div>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <div id="passwordError" class="error"></div>
+
+            <label for="confirm-password">Confirmar Senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+            <div id="confirmPasswordError" class="error"></div>
+
+            <label for="country">Selecione seu país</label>
+            <select id="country" name="country" required>
+                <option value="">Selecione</option>
+                <option value="br">Brasil</option>
+                <option value="us">Estados Unidos</option>
+                <option value="fr">França</option>
+            </select>
+            <div id="countryError" class="error"></div>
+
+            <button type="submit" class="create-account-btn">Criar Conta</button>
+        </form>
+        <div class="footer">
+            <p>Já tem uma conta? <a href="pagina_login.html">Entrar</a></p>
+        </div>
+    </div>
+
+    <script src="script_criarc.js"></script>
+</body>
+</html>
